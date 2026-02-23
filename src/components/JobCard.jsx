@@ -14,7 +14,8 @@ const JobCard = ({ job, candidate, onApply }) => {
       await onApply({
         uuid: candidate.uuid,
         jobId: job.id.toString(),
-        candidateid: candidate.applicationId,
+        candidateId: candidate.candidateId,
+        applicationId: candidate.applicationId,
         repoUrl: repoUrl
       });
       setRepoUrl('');
