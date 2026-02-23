@@ -9,7 +9,6 @@ const JobCard = ({ job, candidate, onApply }) => {
     if (!repoUrl) return alert("Por favor, ingresa la URL de tu repositorio.");
 
     setIsSubmitting(true);
-    console.log("candidato", candidate);
     try {
       await onApply({
         uuid: candidate.uuid,

@@ -13,7 +13,6 @@ export const Service = {
     return response.json();
   },
   apply: async (payload) => {
-    console.log("Enviando este payload:", payload);
     const response = await fetch(`${BASE_URL}/api/candidate/apply-to-job`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
